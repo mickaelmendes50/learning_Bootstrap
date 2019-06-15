@@ -1,0 +1,23 @@
+hgroup {
+    font-family: 'Roboto', serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 12px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+p.footer {
+    text-align: center;
+    font-size: 12px;
+}
