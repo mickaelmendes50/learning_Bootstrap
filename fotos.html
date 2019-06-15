@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Project Glass</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="imagens/fotos.png">
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul>
+            <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
+            <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a href="multimidia.html">Multimídia</a></li>
+            <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+          <hgroup>
+            <h3>Glass > Fotos</h3>
+            <h1>Galeria de Imagens do Google Glass</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 style="text-align: right; font-style: italic; font-size: 9pt">Atualizado em 01/Maio/2013</h3>
+          </hgroup>
+        </header>
+
+        <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+        <ul id="album-fotos">
+          <li id="foto01"><span>Agenda e lembretes</span></li>
+          <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+          <li id="foto03"><span>Leve e compacto</span></li>
+          <li id="foto04"><span>Sensação de uma tela de 50"</span></li>
+          <li id="foto05"><span>Vários tipos de lente</span></li>
+          <li id="foto06"><span>Informações importantes</span></li>
+        </ul>
+      </article>
+      <footer id="rodape">
+        <p>Copyright &copy; 2013 - by Gustavo Guanabara<br/>
+        Facebook | Twitter</p>
+      </footer>
+    </div>
+  </body>
+</html>

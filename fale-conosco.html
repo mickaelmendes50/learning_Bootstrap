@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Project Glass</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="imagens/contato.png">
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul>
+            <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+            <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+            <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+          <hgroup>
+            <h3>Fale Conosco > Contato</h3>
+            <h1>Formulário de Contato</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 style="text-align: right; font-style: italic; font-size: 9pt">Atualizado em 01/Maio/2013</h3>
+          </hgroup>
+        </header>
+
+        <form method="post" id="fContato" action="mailto:mickaelmendes50@gmail.com" oninput="calc_total();">
+          <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+              <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></input><br/></p>
+              <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></input><br/></p>
+              <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></input><br/></p>
+              <fieldset id="sexo">
+                <legend>Sexo:</legend>
+                <input type="radio" name="tSexo" value="male" id="tMasc"><label for="tMasc">Masculino</label></input><br/>
+                <input type="radio" name="tSexo" value="female" id="tFem"><label for="tFem">Feminino</label></input><br/>
+              </fieldset>
+              <p>Data de Nascimento: <input type="date" name="tData" id="cData" size="20" maxlength="30"></input></p>
+          </fieldset>
+
+          <fieldset id="endereco">
+            <legend>Endereço do Usuário</legend>
+              <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."></input></p>
+              <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="1000" placeholder="Número"></input></p>
+              <p>Estado: <select name="tEst" id="cEst">
+                <option>Selecionar...</option>
+                <optgroup label="Região Sudeste">
+                  <option>Rio de Janeiro</option>
+                  <option>São Paulo</option>
+                  <option>Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                  <option>Paraná</option>        
+                  <option>Santa Catarina</option>
+                  <option>Rio Grande do Sul</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                  <option>Goiás</option>
+                  <option>Tocantins</option>
+                </optgroup>
+              </select></p>
+              <p>Cidade: <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades"></input></p>
+              <datalist id="cidades">
+                <option value="Rio de Janeiro"></option>
+                <option value="Nova Iguaçu"></option>
+                <option value="Niteroi"></option>
+                <option value="Belford Roxo"></option>
+              </datalist>
+          </fieldset>
+
+          <fieldset id="mensagem">
+            <legend>Mensagem do Usuário</legend>
+              <p>Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"></input>Max</p>
+              <p>Mensagem: <textarea name="tMsg" id="cMsg" cols="25" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+          </fieldset>
+
+          <fieldset id="pedir">
+            <legend>Quero um Google Glass</legend>
+              <p><input type="checkbox" name="tPed" id="cPed" checked>Gostaria de adquirir um Google Glass quando disponível</p>
+              <p>Quantidade:<input type="number" name="tQtd" id="cQtd" value="0" min="0" max="5"></p>
+              <p>Cor:<input type="color" name="tCor" id="cCor" value="#0000FF"></p>
+              <p>Preço Total: R$<input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly=""></p>
+          </fieldset>
+        </form>
+        <input type="image" name="tEnviar" src="imagens/botao-enviar.png">
+      </article>
+      <footer id="rodape">
+         <p>Copyright &copy; 2013 - by Gustavo Guanabara<br/>
+         Facebook | Twitter</p>
+      </footer>
+    </div>
+  </body>
+</html>
