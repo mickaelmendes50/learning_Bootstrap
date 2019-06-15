@@ -8,6 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/default.css">
+
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -16,27 +22,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <div id="interface">
-      <header id="cabecalho">
-        <hgroup>
-          <h1>Google Glass</h1>
-          <h2>A revolução do Google está chegando</h2>
-        </hgroup>
-        <img id="icone" src="imagens/contato.png">
-        <nav id="menu">
-          <h1>Menu Principal</h1>
-          <ul>
-            <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="index.html">Home</a></li>
-            <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="specs.html">Especificações</a></li>
-            <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
-            <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
-            <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-          </ul>
-        </nav>
-      </header>
+    <div class="container-fluid pt-5 pb-0 pl-5 pr-5">
+      <div class="row">
+        <header id="cabecalho">
+          <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+          </hgroup>
+          <img id="icone" src="imagens/contato.png">
+          <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+              <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="index.html">Home</a></li>
+              <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+              <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+              <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+              <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
 
-      <article id="noticia-principal">
-        <header id="cabecalho-artigo">
+      <div class="row">
+        <header class="col-12">
           <hgroup>
             <h3>Fale Conosco > Contato</h3>
             <h1>Formulário de Contato</h1>
@@ -44,22 +52,39 @@
             <h3 style="text-align: right; font-style: italic; font-size: 9pt">Atualizado em 01/Maio/2013</h3>
           </hgroup>
         </header>
-
+      </div>
         <form method="post" id="fContato" action="mailto:mickaelmendes50@gmail.com" oninput="calc_total();">
-          <fieldset id="usuario">
-            <legend>Identificação do Usuário</legend>
-              <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></input><br/></p>
-              <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></input><br/></p>
-              <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></input><br/></p>
-              <fieldset id="sexo">
-                <legend>Sexo:</legend>
-                <input type="radio" name="tSexo" value="male" id="tMasc"><label for="tMasc">Masculino</label></input><br/>
-                <input type="radio" name="tSexo" value="female" id="tFem"><label for="tFem">Feminino</label></input><br/>
-              </fieldset>
-              <p>Data de Nascimento: <input type="date" name="tData" id="cData" size="20" maxlength="30"></input></p>
-          </fieldset>
+          <legend>Identificação do Usuário</legend>
+          <div class="form-group">
+              <label for="inputName">Nome</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nome completo">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Endereço de email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Senha</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+            </div>
+          </div>
+          <div class="form-check">
+              <legend style="font-size: 16px; text-align: left;">Sexo</legend>
+              <input class="form-check-input" type="radio" name="gender" id="male" value="female">
+              <label class="form-check-label" for="male">Masculino</label>
+            </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+              <label class="form-check-label" for="female">Feminino</label>
+          </div>
+          <div class="form-group">
+              <label for="inputData">Data de Nascimento</label>
+              <input type="date" class="form-control" id="inputData" placeholder="Data de Nascimento">
+          </div>
+        </form>
 
-          <fieldset id="endereco">
+          <!--<fieldset id="endereco">
             <legend>Endereço do Usuário</legend>
               <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."></input></p>
               <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="1000" placeholder="Número"></input></p>
@@ -87,26 +112,26 @@
                 <option value="Niteroi"></option>
                 <option value="Belford Roxo"></option>
               </datalist>
-          </fieldset>
+          </fieldset>-->
 
-          <fieldset id="mensagem">
+          <!--<fieldset id="mensagem">
             <legend>Mensagem do Usuário</legend>
               <p>Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"></input>Max</p>
               <p>Mensagem: <textarea name="tMsg" id="cMsg" cols="25" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
-          </fieldset>
+          </fieldset>-->
 
-          <fieldset id="pedir">
+          <!--<fieldset id="pedir">
             <legend>Quero um Google Glass</legend>
               <p><input type="checkbox" name="tPed" id="cPed" checked>Gostaria de adquirir um Google Glass quando disponível</p>
               <p>Quantidade:<input type="number" name="tQtd" id="cQtd" value="0" min="0" max="5"></p>
               <p>Cor:<input type="color" name="tCor" id="cCor" value="#0000FF"></p>
               <p>Preço Total: R$<input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly=""></p>
-          </fieldset>
-        </form>
-        <input type="image" name="tEnviar" src="imagens/botao-enviar.png">
-      </article>
-      <footer id="rodape">
-         <p>Copyright &copy; 2013 - by Gustavo Guanabara<br/>
+          </fieldset>-->
+
+        <!--<input type="image" name="tEnviar" src="imagens/botao-enviar.png">-->
+
+      <footer class="col-12">
+         <p class="footer">Copyright &copy; 2013 - by Gustavo Guanabara<br/>
          Facebook | Twitter</p>
       </footer>
     </div>
