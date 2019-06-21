@@ -62,18 +62,21 @@
           </hgroup>
         </header>
       </div>
-
-      Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-      <section id="conteudo">
-        <img src="imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
-        <map name="meumapa">
-          <area shape="poly" coords="183,219,266,208,267,244,183,257" href="google-glass.html#tela" target="janela">
-          <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
-          <area shape="circle" coords="77,52,11" href="google-glass.html#camera" target="janela">
-          <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela">
-        </map>
-        <iframe src="google-glass.html" name="janela" scrolling="no" id="frame-spec"></iframe>
-      </section>
+      <div class="row">
+        <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+          </div>
+          <div class="col-md-6">
+          <map name="meumapa">
+            <area shape="poly" coords="183,219,266,208,267,244,183,257" href="google-glass.html#tela" target="janela">
+            <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
+            <area shape="circle" coords="77,52,11" href="google-glass.html#camera" target="janela">
+            <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela">
+          </map>
+          <iframe class="img-fluid rounded" src="google-glass.html" name="janela" scrolling="no" id="frame-spec"></iframe>
+          </div>
+      </div>
       <footer class="col-12">
           <p class="footer">Copyright &copy; 2013 - by Gustavo Guanabara<br/>
           Facebook | Twitter</p>
