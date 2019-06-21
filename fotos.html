@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/fotos.css">
 
     <!-- Font Family -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -21,6 +22,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Local JavaScript -->
+    <script src="js/function.js"></script>
   
     <div class="container-fluid pt-5 pr-5 pl-5 pb-0">
       <div class="row">
@@ -33,11 +36,11 @@
           <nav id="menu">
             <h1>Menu Principal</h1>
             <ul>
-              <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
-              <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
-              <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
-              <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
-              <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+              <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+              <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+              <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+              <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+              <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
             </ul>
           </nav>
         </header>
@@ -54,17 +57,16 @@
         </header>
       </div>
 
-        <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+      <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
 
-        <ul id="album-fotos">
-          <li id="foto01"><span>Agenda e lembretes</span></li>
-          <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
-          <li id="foto03"><span>Leve e compacto</span></li>
-          <li id="foto04"><span>Sensação de uma tela de 50"</span></li>
-          <li id="foto05"><span>Vários tipos de lente</span></li>
-          <li id="foto06"><span>Informações importantes</span></li>
-        </ul>
-      </article>
+      <ul id="album-fotos">
+        <li id="foto01"><span>Agenda e lembretes</span></li>
+        <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+        <li id="foto03"><span>Leve e compacto</span></li>
+        <li id="foto04"><span>Sensação de uma tela de 50"</span></li>
+        <li id="foto05"><span>Vários tipos de lente</span></li>
+        <li id="foto06"><span>Informações importantes</span></li>
+      </ul>
       <footer class="col-12">
         <p class="footer">Copyright &copy; 2013 - by Gustavo Guanabara<br/>
         Facebook | Twitter</p>
