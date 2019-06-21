@@ -82,53 +82,43 @@
               <label for="inputData">Data de Nascimento</label>
               <input type="date" class="form-control" id="inputData" placeholder="Data de Nascimento">
           </div>
+          <div class="form-group">
+              <label for="inputAddress">Endereço</label>
+              <div class="form-row">
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Logradouro">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Numero">
+                </div>
+              </div>
+              <label for="inputRegiao">Região</label>
+              <div class="form-row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="inputRegiao" placeholder="Estado">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="inputRegiao" placeholder="Cidade">
+                </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <legend>Quero um Google Glass</legend>
+              <label for="inputPurshase">Gostaria de adquirir um Google Glass quando disponível</label>
+              <div class="form-row">
+                <div class="col-md-10 col-10">
+                    <input type="number" class="form-control" id="inputPurshase" value="0" min="0" max="5">
+                </div>
+                <div class="col-md-2 col-2">
+                    <input type="color" class="form-control" id="inputPurshase" value="#0000FF">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" id="inputPurshase" placeholder="Total a Pagar" readonly>
+                </div>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Confirmar</button>
         </form>
-
-          <!--<fieldset id="endereco">
-            <legend>Endereço do Usuário</legend>
-              <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."></input></p>
-              <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="1000" placeholder="Número"></input></p>
-              <p>Estado: <select name="tEst" id="cEst">
-                <option>Selecionar...</option>
-                <optgroup label="Região Sudeste">
-                  <option>Rio de Janeiro</option>
-                  <option>São Paulo</option>
-                  <option>Minas Gerais</option>
-                </optgroup>
-                <optgroup label="Região Sul">
-                  <option>Paraná</option>        
-                  <option>Santa Catarina</option>
-                  <option>Rio Grande do Sul</option>
-                </optgroup>
-                <optgroup label="Região Centro-Oeste">
-                  <option>Goiás</option>
-                  <option>Tocantins</option>
-                </optgroup>
-              </select></p>
-              <p>Cidade: <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades"></input></p>
-              <datalist id="cidades">
-                <option value="Rio de Janeiro"></option>
-                <option value="Nova Iguaçu"></option>
-                <option value="Niteroi"></option>
-                <option value="Belford Roxo"></option>
-              </datalist>
-          </fieldset>-->
-
-          <!--<fieldset id="mensagem">
-            <legend>Mensagem do Usuário</legend>
-              <p>Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"></input>Max</p>
-              <p>Mensagem: <textarea name="tMsg" id="cMsg" cols="25" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
-          </fieldset>-->
-
-          <!--<fieldset id="pedir">
-            <legend>Quero um Google Glass</legend>
-              <p><input type="checkbox" name="tPed" id="cPed" checked>Gostaria de adquirir um Google Glass quando disponível</p>
-              <p>Quantidade:<input type="number" name="tQtd" id="cQtd" value="0" min="0" max="5"></p>
-              <p>Cor:<input type="color" name="tCor" id="cCor" value="#0000FF"></p>
-              <p>Preço Total: R$<input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly=""></p>
-          </fieldset>-->
-
-        <!--<input type="image" name="tEnviar" src="imagens/botao-enviar.png">-->
 
       <footer class="col-12">
          <p class="footer">Copyright &copy; 2013 - by Gustavo Guanabara<br/>

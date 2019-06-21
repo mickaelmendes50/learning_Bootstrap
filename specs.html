@@ -8,6 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/default.css">
+
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -15,55 +21,53 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <div id="interface">
-      <header id="cabecalho">
-        <hgroup>
-          <h1>Google Glass</h1>
-          <h2>A revolução do Google está chegando</h2>
-        </hgroup>
+  
+    <div class="container-fluid pt-5 pr-5 pl-5 pb-0">
+      <div class="row">
+        <header>
+          <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+          </hgroup>
+          <img id="icone" src="imagens/especificacoes.png">
+          <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+              <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+              <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+              <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+              <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+              <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+ 
+      <div class="row">
+        <header class="col-12">
+          <hgroup>
+            <h3>Tecnologia > Inovações</h3>
+            <h1>Saiba tudo sobre o Google Glass</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 style="text-align: right; font-style: italic; font-size: 9pt">Atualizado em 23/Abril/2013</h3>
+          </hgroup>
+        </header>
+      </div>
 
-        <img id="icone" src="imagens/especificacoes.png">
-
-        <nav id="menu">
-          <h1>Menu Principal</h1>
-          <ul>
-            <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="index.html">Home</a></li>
-            <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
-            <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
-            <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
-            <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section id="corpo-full">
-        <article id="noticia-principal">
-          <header id="cabecalho-artigo">
-            <hgroup>
-              <h3>Glass > Especificações</h3>
-              <h1>Raio-X no Google Glass</h1>
-              <h2>por Gustavo Guanabara</h2>
-              <h3 style="text-align: right; font-style: italic; font-size: 9pt">Atualizado em 01/Maio/2013</h3>
-            </hgroup>
-          </header>
-
-          Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-          <section id="conteudo">
-            <img src="imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
-            <map name="meumapa">
-              <area shape="poly" coords="183,219,266,208,267,244,183,257" href="google-glass.html#tela" target="janela">
-              <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
-              <area shape="circle" coords="77,52,11" href="google-glass.html#camera" target="janela">
-              <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela">
-            </map>
-            <iframe src="google-glass.html" name="janela" scrolling="no" id="frame-spec"></iframe>
-          </section>
-        </article>
+      Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+      <section id="conteudo">
+        <img src="imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+        <map name="meumapa">
+          <area shape="poly" coords="183,219,266,208,267,244,183,257" href="google-glass.html#tela" target="janela">
+          <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
+          <area shape="circle" coords="77,52,11" href="google-glass.html#camera" target="janela">
+          <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela">
+        </map>
+        <iframe src="google-glass.html" name="janela" scrolling="no" id="frame-spec"></iframe>
       </section>
-      <footer id="rodape">
-        <p>Copyright &copy; 2013 - by Gustavo Guanabara<br/>
-        Facebook | Twitter</p>
+      <footer class="col-12">
+          <p class="footer">Copyright &copy; 2013 - by Gustavo Guanabara<br/>
+          Facebook | Twitter</p>
       </footer>
     </div>
   </body>
