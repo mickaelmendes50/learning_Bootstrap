@@ -32,3 +32,8 @@ img#icone {
 div#head {
     margin-left: 0%;
 }
+
+h2#title {
+    margin-top: -5pt;
+    font-size: 9pt;
+}
