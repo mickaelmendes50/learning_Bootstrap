@@ -25,34 +25,39 @@
     <!-- Local JavaScript -->
     <script src="js/function.js"></script>
     
-    <div class="container-fluid pt-5 pr-0 pl-0 pb-0">
-        <div class="row" id="header">
-            <!--<div class="col-md-2 col-12 d-none d-lg-block">
-                <img class="img-fluid rounded" id="icone" src="imagens/contato.png">
-            </div>-->
-            <div class="col-md-4" id="head">
+    <div class="container-fluid">
+        <nav class="navbar-expand-lg navbar-light fixed-top bg-light" id="header">
+          <div class="row">
+            <div class="col-md-4">
+              <button class="navbar-toggler" id="nav-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a id="header" class="navbar-brand" href="index.html">              
                 <h1><b>Google Glass</b></h1>
                 <h2 id="title">A revolução do Google está chegando</h2>
+              </a>
             </div>
-            <div class="col-md-8 d-none d-lg-block">
-                <ul class="nav justify-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html"><b>Home</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="specs.html"><b>Especificações</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="fotos.html"><b>Fotos</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="fale-conosco.html"><b>Fale conosco</b></a>
-                  </li>
-                </ul>
+            <div class="col-md-8 collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-aut">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="specs.html"><b>Especificações</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fotos.html"><b>Fotos</b></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="fale-conosco.html"><b>Fale conosco</b></a>
+                </li>
+              </ul>
             </div>
-        </div>
-
-      <div class="row" id="body">
+          </div>
+        </nav>
+      </div>
+      <div class="container-fluid"  id="body">
+        <div class="row" id="body-title">
         <header class="col-12">
           <hgroup>
             <h1 id="title">Formulário de Contato</h1>
