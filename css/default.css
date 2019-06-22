@@ -21,3 +21,14 @@ p.footer {
     text-align: center;
     font-size: 12px;
 }
+
+img#icone {
+    block-size: 75px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 30%;
+}
+
+div#head {
+    margin-left: 0%;
+}
