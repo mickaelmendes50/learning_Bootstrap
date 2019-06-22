@@ -10,6 +10,7 @@ h1 {
 }
 h2 {
     font-size: 20px;
+    padding-bottom: 3%;
 }
 h3 {
     font-size: 12px;
@@ -32,11 +33,39 @@ img#icone {
     padding-left: 30%;
 }
 
+div#header {
+    margin-top: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: 1pt solid gray;
+}
 div#head {
     margin-left: 0%;
 }
+div#body {
+    padding-left: 3%;
+    padding-right: 3%;
+}
 
+h1#title {
+    padding-top: 1%;
+}
 h2#title {
     margin-top: -5pt;
     font-size: 9pt;
+}
+
+form {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    div#header {
+        text-align: center;
+        margin-top: -3%;
+    }
+    h1#title {
+        margin-top: 5%;
+    }
 }
